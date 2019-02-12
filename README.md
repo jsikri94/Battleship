@@ -1,3 +1,9 @@
+# Battleship
+### Destroy them ships!
+
+Play `Battleship` with this project.
+Works exactly like the paper version of the game. More autoamtion coming soon!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
