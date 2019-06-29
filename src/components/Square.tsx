@@ -8,6 +8,8 @@ interface ISquareState {
 interface ISquareProps {
   isOpponentsBoard?: boolean;
   value?: string;
+  r?: number;
+  c?: string;
 }
 
 class Square extends React.Component<ISquareProps, ISquareState> {
@@ -28,6 +30,8 @@ class Square extends React.Component<ISquareProps, ISquareState> {
     }
   }
   handleClick = () => {
+    console.log(this.props.r);
+    console.log(this.props.c);
     if (this.props.value === "~") {
       if (this.props.isOpponentsBoard) {
         if (this.state.bgColor === "#1e7ef8") {

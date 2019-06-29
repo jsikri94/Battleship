@@ -32,7 +32,12 @@ export default class Board extends React.Component<IBoardProps> {
       );
       for (let j = 0; j < 10; j++) {
         row.push(
-          <Square isOpponentsBoard={this.props.isOpponentsBoard} value="~" />
+          <Square
+            isOpponentsBoard={this.props.isOpponentsBoard}
+            value="~"
+            r={i + 1}
+            c={letters[j]}
+          />
         );
       }
       board.push(<div>{row}</div>);
